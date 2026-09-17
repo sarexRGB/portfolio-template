@@ -16,28 +16,40 @@ const About = () => {
           {/* Content */}
           <div className="flex-1 md:text-left">
             <Badge variant="secondary" className="mb-4">
-              About Me
+              Sobre mi
             </Badge>
             <ProfileImage className="mt-3 mb-8 block md:hidden" />
             <h2 className="text-4xl font-bold mb-4 tracking-tight">
-              Passionate about creating impactful web experiences
+              Apasionada por crear soluciones web funcionales
             </h2>
             <p className="text-muted-foreground mb-6 text-justify">
-              With over 5 years of experience in full-stack development, I
-              specialize in building scalable web applications using modern
-              technologies. My expertise includes React, Node.js, and cloud
-              architecture. I&apos;m passionate about creating elegant solutions
-              to complex problems and sharing knowledge with the developer
-              community.
+              Soy desarrolladora web Full Stack, con formación en el desarrollo
+              de aplicaciones utilizando tecnologías como JavaScript, React, Python, Django y MySQL.
+              Me interesa crear soluciones funcionales responsivas,
+              combinando el desarrollo Front-end, la lógica del Back-end
+              y la gestión de bases de datos.
+              <br />
+              Me considero una persona responsable, curiosa y con disposición
+              para aprender. Disfruto resolver problemas, explorar nuevas
+              tecnologías y transformar ideas en proyectos funcionales.
+              <br />
+              Actualmente busco mi primera oportunidad profecional como desarrolladora
+              Full Stack, donde pueda aplicar mis conocimientos, continuar aprendiendo
+              y crecer dentro de un equipo de desarrollo.
             </p>
             <div className="flex flex-wrap gap-4 justify-start">
-              <Button className="rounded-full">
-                <GithubLogo />
-                View Github
+              <Button className="rounded-full" asChild>
+                <a href="https://github.com/sarexRGB?tab=repositories">
+                  <GithubLogo />
+                  Ver Github
+                </a>
               </Button>
-              <Button variant="outline" className="rounded-full">
-                <Download />
-                Download CV
+              <Button variant="outline" className="rounded-full" asChild>
+                <a href="/cv/CV_Sara_Velez.pdf" download="/Curriculum_Sara_Vélez.pdf">
+                  <Download />
+                  Descargar CV
+                </a>
+
               </Button>
             </div>
           </div>
