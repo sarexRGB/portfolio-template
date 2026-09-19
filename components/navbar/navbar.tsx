@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { GithubLogo, XLogo } from "../icons";
-import { Logo } from "./logo";
+import { GithubLogo } from "../icons";
 import { NavMenu } from "./nav-menu";
 import { NavigationSheet } from "./navigation-sheet";
 
@@ -14,16 +13,11 @@ const Navbar = () => {
         <NavMenu className="hidden md:block" />
 
         <div className="flex items-center gap-2">
-          {/* cambiar por enlaces de github convirtiendo
-          usando la prop del button asChild para pasar
-          por medio del hijo un componente "a" o Link importar de next/link */}
-          <Button
-            variant="outline"
-            className="rounded-full shadow-none"
-            size="icon"
-            asChild
-          >
-            <GithubLogo className="h-5! w-5!" />
+          <Button className="rounded-full" asChild>
+            <a href="https://github.com/sarexRGB?tab=repositories">
+              <GithubLogo />
+              Ver Github
+            </a>
           </Button>
 
           {/* Mobile Menu */}

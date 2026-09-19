@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import "devicon/devicon.min.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
