@@ -35,9 +35,10 @@ const technologies = [
 ];
 
 const Techskills = () => {
-    return (
-        <section id="techskills" className="relative py-20 px-6">
-            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">
+  return (
+    <section id="techskills" className="relative py-20 px-6">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">
                 Habilidades tecnológicas
             </h2>
 
@@ -54,8 +55,9 @@ const Techskills = () => {
                     </div>
                 ))}
             </div>
-        </section>
-    );
+      </div>
+    </section>
+  );
 };
 
 export default Techskills;
