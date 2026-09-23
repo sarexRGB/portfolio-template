@@ -1,4 +1,3 @@
-import { div } from "motion/react-client";
 
 const technologies = [
   {
@@ -42,11 +41,16 @@ const Techskills = () => {
                 Habilidades tecnológicas
             </h2>
 
-            <div className="flex flex-row gap-6 ">
+            <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-10">
                 {technologies.map((technology) => (
-                    <div key={technology.name}>
-                        <i className={technology.icon}></i>
-                        <span>{technology.name}</span>
+                    <div
+                        key={technology.name}
+                        className="flex flex-col items-center gap-3"
+                    >
+                        <i className={`${technology.icon} text-6xl`}></i>
+                        <span className="text-base font-medium">
+                            {technology.name}
+                        </span>
                     </div>
                 ))}
             </div>

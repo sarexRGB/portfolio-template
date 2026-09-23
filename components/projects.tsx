@@ -53,7 +53,7 @@ const ProjectCard = ({
             <Button variant="default" className="rounded-full" asChild>
               <a href={liveUrl} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-1 h-4 w-4" />
-                Live Demo
+                Ver Demo
               </a>
             </Button>
           )}
@@ -65,7 +65,7 @@ const ProjectCard = ({
             >
               <a href={githubUrl} target="_blank" rel="noopener noreferrer">
                 <GithubLogo className="mr-1 h-4 w-4" />
-                View Code
+                Ver código
               </a>
             </Button>
           )}
@@ -78,13 +78,13 @@ const ProjectCard = ({
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Tic-Tac-Toe",
       description:
-        "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
-      image: "/placeholder.svg",
-      technologies: ["Next.js", "TypeScript", "Stripe", "Prisma", "PostgreSQL"],
-      liveUrl: "https://ecommerce-demo.com",
-      githubUrl: "https://github.com/username/ecommerce",
+        "Juego interactivo de tres en línea desarrollado con JavaScript, con modo para dos jugadores y modo contra la máquina con tres niveles de dificultad.",
+      image: "/images/TicTacToe.png",
+      technologies: ["JavaScript", "HTML5", "CSS3"],
+      liveUrl: "https://sarexrgb.github.io/tic-tac-toe/",
+      githubUrl: "https://github.com/sarexRGB/tic-tac-toe",
     },
     {
       title: "AI Task Manager",
@@ -120,13 +120,14 @@ const Projects = () => {
       <div className="max-w-screen-md mx-auto">
         <div className="text-center mb-12">
           <Badge variant="secondary" className="mb-4">
-            Projects
+            Proyectos
           </Badge>
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">
-            Featured Work
+            aproyectos destacados
           </h2>
           <p className="text-muted-foreground mt-2 sm:mt-4 text-lg">
-            Showcasing some of my best projects and technical achievements
+            Una selección de proyectos desarrollados durante
+            mi formación y práctica como desarrolladora Full Stack
           </p>
         </div>
 
